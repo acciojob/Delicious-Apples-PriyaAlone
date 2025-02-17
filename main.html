@@ -1,176 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-        }
-
-        .product__photo {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-
-        .photo-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .photo-main img {
-            width: 300px;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            margin-bottom: 10px;
-        }
-
-        .photo-album ul {
-            display: flex;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            gap: 10px;
-        }
-
-        .photo-album ul li img {
-            width: 75px;
-            height: auto;
-            cursor: pointer;
-            border: 2px solid #ddd;
-            border-radius: 5px;
-        }
-
-        .price {
-            font-size: 24px;
-            font-weight: bold;
-            color: #d32f2f;
-            margin: 20px 0;
-        }
-
-        .variant {
-            display: flex;
-            gap: 15px;
-            margin-bottom: 20px;
-        }
-
-        .variant div {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .variant img {
-            width: 100px;
-            height: auto;
-            border-radius: 50%;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .description {
-            max-width: 600px;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .add-to-cart {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #4caf50;
-            color: #fff;
-            font-size: 16px;
-            text-transform: uppercase;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-        }
-
-        .add-to-cart:hover {
-            background-color: #45a049;
-        }
-    </style>
+    <title>Apple Varieties Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <div class="container">
-        <!-- Product Photo Section -->
-		<div class="product">
-        <div class="product__photo">
-            <div class="photo-container">
-                <div class="photo-main">
-                    <img src="https://via.placeholder.com/300x300" alt="Main Apple Image">
-                </div>
-                <div class="photo-album">
-                    <ul>
-                        <li><img src="https://via.placeholder.com/75x75" alt="Apple View 1"></li>
-                        <li><img src="https://via.placeholder.com/75x75" alt="Apple View 2"></li>
-                        <li><img src="https://via.placeholder.com/75x75" alt="Apple View 3"></li>
-                    </ul>
-                </div>
+    <div class="product__photo">
+        <div class="photo-container">
+            <div class="photo-main">
+                <img src="main-apple.jpg" alt="Main Apple">
+            </div>
+            <div class="photo-album">
+                <ul>
+                    <li><img src="apple-view1.jpg" alt="Apple View 1"></li>
+                    <li><img src="apple-view2.jpg" alt="Apple View 2"></li>
+                    <li><img src="apple-view3.jpg" alt="Apple View 3"></li>
+                </ul>
             </div>
         </div>
-	</div>
-
-        <!-- Price Section -->
-        <div class="price">$7.93</div>
-
-        <!-- Varieties Section -->
-        <div class="variant">
-			<ul>
-				<li>
-            <div>
-                <img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302064/codepen/delicious-apples/green-apple2.png" alt="Green Apple">
-                <span>Green</span>
-            </div>
-				</li>
-				<li>
-            <div>
-                <img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302752/codepen/delicious-apples/yellow-apple.png" alt="Yellow Apple">
-                <span>Yellow</span>
-            </div>
-				</li>
-			<li>
-            <div>
-                <img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302427/codepen/delicious-apples/orange-apple.png" alt="Orange Apple">
-                <span>Orange</span>
-            </div>
-			</li>
-				<li>
-            <div>
-                <img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302285/codepen/delicious-apples/red-apple.png" alt="Red Apple">
-                <span>Red</span>
-            </div>
-				</li>
-			</ul>
-        </div>
-
-        <!-- Benefits Section -->
-        <div class="description">
-            <h2>BENEFITS</h2>
-            <p>Apples are rich in dietary fiber, antioxidants, and essential vitamins. They support heart health, aid in digestion, and provide a natural energy boost.</p>
-        </div>
-
-        <!-- Add to Cart Section -->
-        <a href="#" class="add-to-cart">ADD TO CART</a>
     </div>
+    <div class="price">
+        <h2>$7.93</h2>
+    </div>
+    <div class="variant">
+        <h3>Varieties</h3>
+        <ul>
+            <li>Green - <a href="https://res.cloudinary.com/john-mantas/image/upload/v1537302064/codepen/delicious-apples/green-apple2.png">Link</a></li>
+            <li>Yellow - <a href="https://res.cloudinary.com/john-mantas/image/upload/v1537302752/codepen/delicious-apples/yellow-apple.png">Link</a></li>
+            <li>Orange - <a href="https://res.cloudinary.com/john-mantas/image/upload/v1537302427/codepen/delicious-apples/orange-apple.png">Link</a></li>
+            <li>Red - <a href="https://res.cloudinary.com/john-mantas/image/upload/v1537302285/codepen/delicious-apples/red-apple.png">Link</a></li>
+        </ul>
+    </div>
+    <div class="description">
+        <h3>BENEFITS</h3>
+        <p>Apples are rich in fiber and vitamin C, promote heart health, and support weight loss.</p>
+    </div>
+    <button class="add-to-cart">ADD TO CART</button>
 </body>
-
 </html>
+
